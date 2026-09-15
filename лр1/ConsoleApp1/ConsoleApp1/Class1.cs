@@ -27,5 +27,11 @@ namespace ConsoleApp1
             double perimeter = 2 * (length + width);
             return (int)Math.Ceiling(perimeter / rollWidth);
         }
+
+        static int CalculateStripsPerRoll(double rollLength, double height)
+        {
+            double stripLength = height + 0.1;
+            return (int)(rollLength / stripLength);
+        }
     }
 }
