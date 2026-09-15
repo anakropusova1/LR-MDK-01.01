@@ -33,5 +33,10 @@ namespace ConsoleApp1
             double stripLength = height + 0.1;
             return (int)(rollLength / stripLength);
         }
+
+        static int CalculateRolls(int totalStrips, int stripsPerRoll)
+        {
+            return (int)Math.Ceiling((double)totalStrips / stripsPerRoll);
+        }
     }
 }
