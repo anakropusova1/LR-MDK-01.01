@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    internal class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            double length = ReadPositiveDouble("Введите длину комнаты (м): ");
-            double width = ReadPositiveDouble("Введите ширину комнаты (м): ");
-            double height = ReadPositiveDouble("Введите высоту комнаты (м): ");
-            double rollWidth = ReadPositiveDouble("Введите ширину рулона (м): ");
-            double rollLength = ReadPositiveDouble("Введите длину рулона (м): ");
+            double length = Class1.ReadPositiveDouble("Введите длину комнаты (м): ");
+            double width = Class1.ReadPositiveDouble("Введите ширину комнаты (м): ");
+            double height = Class1.ReadPositiveDouble("Введите высоту комнаты (м): ");
+            double rollWidth = Class1.ReadPositiveDouble("Введите ширину рулона (м): ");
+            double rollLength = Class1.ReadPositiveDouble("Введите длину рулона (м): ");
 
-            int totalStrips = CalculateStrips(length, width, rollWidth);
-            int stripsPerRoll = CalculateStripsPerRoll(rollLength, height);
-            int rolls = CalculateRolls(totalStrips, stripsPerRoll);
+            int totalStrips = Class1.CalculateStrips(length, width, rollWidth);
+            int stripsPerRoll = Class1.CalculateStripsPerRoll(rollLength, height);
+            int rolls = Class1.CalculateRolls(totalStrips, stripsPerRoll);
 
             Console.WriteLine("Количество полос: " + totalStrips);
             Console.WriteLine("Количество рулонов: " + rolls);

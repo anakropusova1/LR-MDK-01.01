@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    internal class Class1
+    public class Class1
     {
-        static double ReadPositiveDouble(string prompt)
+       public static double ReadPositiveDouble(string prompt)
         {
             double value;
             while (true)
@@ -22,19 +22,19 @@ namespace ConsoleApp1
                 Console.WriteLine("Ошибка: введите положительное число. Повторите ввод.");
             }
         }
-        static int CalculateStrips(double length, double width, double rollWidth)
+        public static int CalculateStrips(double length, double width, double rollWidth)
         {
             double perimeter = 2 * (length + width);
             return (int)Math.Ceiling(perimeter / rollWidth);
         }
 
-        static int CalculateStripsPerRoll(double rollLength, double height)
+        public static int CalculateStripsPerRoll(double rollLength, double height)
         {
             double stripLength = height + 0.1;
             return (int)(rollLength / stripLength);
         }
 
-        static int CalculateRolls(int totalStrips, int stripsPerRoll)
+        public static int CalculateRolls(int totalStrips, int stripsPerRoll)
         {
             return (int)Math.Ceiling((double)totalStrips / stripsPerRoll);
         }
