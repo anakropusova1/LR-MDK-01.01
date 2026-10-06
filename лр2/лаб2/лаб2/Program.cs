@@ -10,7 +10,18 @@ namespace лаб2
     {
         static void Main(string[] args)
         {
+            OrderManager manager = new OrderManager();
+            manager.PrintPriceList();
+            manager.CollectOrder();
 
+            if (manager.ValidateOrder())
+            {
+                int totalCost = manager.CalculateTotal();
+                manager.UpdateStock();
+                Console.WriteLine($"Стоимость заказа: {totalCost} руб.");
+            }
+
+            manager.PrintStock();
         }
     }
 }
