@@ -47,6 +47,21 @@ namespace лаб2
             }
         }
 
+        public bool ValidateOrder()
+        {
+            bool isValid = true;
+
+            for (int i = 0; i < orderQty.Length; i++)
+            {
+                if (orderQty[i] > stock[i])
+                {
+                    Console.WriteLine($"Не хватило товара!!!! {names[i]} (нужно {orderQty[i]} шт., есть {stock[i]} шт.)");
+                    isValid = false;
+                }
+            }
+
+            return isValid;
+        }
     }
 }
 
