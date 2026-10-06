@@ -110,6 +110,20 @@ namespace лаб2
             }
         }
 
+        private int ReadQuantity()
+        {
+            while (true)
+            {
+                Console.Write("Введите количество: ");
+                string input = Console.ReadLine();
+
+                if (int.TryParse(input, out int qty) && qty > 0)
+                {
+                    return qty;
+                }
+                Console.WriteLine("Ошибка: количество должно быть целым числом больше нуля.");
+            }
+        }
 
     }
 }
