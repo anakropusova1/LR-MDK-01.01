@@ -21,6 +21,14 @@ namespace лаб2
         {
             orderQty = new int[names.Length];
         }
-
+        public void PrintPriceList()
+        {
+            Console.WriteLine("Прайс-лист:");
+            for (int i = 0; i < names.Length; i++)
+            {
+                Console.WriteLine($"{i + 1}. {names[i]} — {prices[i]} руб., {stock[i]} шт.");
+            }
+        }
     }
 }
+
