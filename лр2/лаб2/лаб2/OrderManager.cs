@@ -62,6 +62,18 @@ namespace лаб2
 
             return isValid;
         }
+
+        public int CalculateTotal()
+        {
+            int total = 0;
+            for (int i = 0; i < orderQty.Length; i++)
+            {
+                total += orderQty[i] * prices[i];
+            }
+            return total;
+        }
+
+
     }
 }
 
