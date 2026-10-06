@@ -73,6 +73,13 @@ namespace лаб2
             return total;
         }
 
+        public void UpdateStock()
+        {
+            for (int i = 0; i < orderQty.Length; i++)
+            {
+                stock[i] -= orderQty[i];
+            }
+        }
 
     }
 }
