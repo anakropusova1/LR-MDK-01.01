@@ -29,6 +29,24 @@ namespace лаб2
                 Console.WriteLine($"{i + 1}. {names[i]} — {prices[i]} руб., {stock[i]} шт.");
             }
         }
+
+
+        public void CollectOrder()
+        {
+            while (true)
+            {
+                int itemNum = ReadItemNumber();
+
+                if (itemNum == 0)
+                {
+                    break;
+                }
+
+                int qty = ReadQuantity();
+                orderQty[itemNum - 1] += qty;
+            }
+        }
+
     }
 }
 
