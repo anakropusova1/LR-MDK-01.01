@@ -95,6 +95,21 @@ namespace лаб2
             Console.WriteLine();
         }
 
+        private int ReadItemNumber()
+        {
+            while (true)
+            {
+                Console.Write("Введите номер товара (0 — конец заказа): ");
+                string input = Console.ReadLine();
+
+                if (int.TryParse(input, out int itemNum) && itemNum >= 0 && itemNum <= names.Length)
+                {
+                    return itemNum;
+                }
+                Console.WriteLine($"Ошибка: введите целое число от 0 до {names.Length}.");
+            }
+        }
+
 
     }
 }
