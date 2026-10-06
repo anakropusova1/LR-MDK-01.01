@@ -10,15 +10,15 @@ namespace ConsoleApp1
     {
         static void Main(string[] args)
         {
-            double length = Class1.ReadPositiveDouble("Введите длину комнаты (м): ");
-            double width = Class1.ReadPositiveDouble("Введите ширину комнаты (м): ");
-            double height = Class1.ReadPositiveDouble("Введите высоту комнаты (м): ");
-            double rollWidth = Class1.ReadPositiveDouble("Введите ширину рулона (м): ");
-            double rollLength = Class1.ReadPositiveDouble("Введите длину рулона (м): ");
+            double length = input.ReadPositiveDouble("Введите длину комнаты (м): ");
+            double width = input.ReadPositiveDouble("Введите ширину комнаты (м): ");
+            double height = input.ReadPositiveDouble("Введите высоту комнаты (м): ");
+            double rollWidth = input.ReadPositiveDouble("Введите ширину рулона (м): ");
+            double rollLength = input.ReadPositiveDouble("Введите длину рулона (м): ");
 
-            int totalStrips = Class1.CalculateStrips(length, width, rollWidth);
-            int stripsPerRoll = Class1.CalculateStripsPerRoll(rollLength, height);
-            int rolls = Class1.CalculateRolls(totalStrips, stripsPerRoll);
+            int totalStrips = chet.CalculateStrips(length, width, rollWidth);
+            int stripsPerRoll = chet.CalculateStripsPerRoll(rollLength, height);
+            int rolls = chet.CalculateRolls(totalStrips, stripsPerRoll);
 
             Console.WriteLine("Количество полос: " + totalStrips);
             Console.WriteLine("Количество рулонов: " + rolls);
