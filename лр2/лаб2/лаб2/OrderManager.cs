@@ -81,6 +81,21 @@ namespace лаб2
             }
         }
 
+        public void PrintStock()
+        {
+            Console.Write("Остатки на складе: ");
+            for (int i = 0; i < names.Length; i++)
+            {
+                Console.Write($"{names[i]} {stock[i]}");
+                if (i < names.Length - 1)
+                {
+                    Console.Write(", ");
+                }
+            }
+            Console.WriteLine();
+        }
+
+
     }
 }
 
