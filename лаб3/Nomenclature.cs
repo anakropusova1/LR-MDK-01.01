@@ -32,5 +32,16 @@ namespace лаб3
 
             products_[productGroup].Add(productName);
         }
+        public ProductGroup? GetProductGroupByProduct(string product)
+        {
+            foreach (KeyValuePair<ProductGroup, List<string>> productGroups in products_)
+            {
+                if (productGroups.Value.Contains(product))
+                {
+                    return productGroups.Key;
+                }
+            }
+            return null;
+        }
     }
 }
