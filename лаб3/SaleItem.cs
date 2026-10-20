@@ -26,4 +26,3 @@ namespace лаб3
         public double GetPrice() { return price_; }
     }
 }
-}
