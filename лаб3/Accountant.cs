@@ -39,6 +39,14 @@ namespace лаб3
                     });
                 }
             }
+            ProfitByPeriodReport result = new ProfitByPeriodReport();
+
+            foreach (KeyValuePair<string, ReportRow> row in totalRows)
+            {
+                result.AddRow(row.Value);
+            }
+
+            return result;
         }
     }
 }
