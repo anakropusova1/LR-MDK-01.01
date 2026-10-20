@@ -22,5 +22,9 @@ namespace лаб3
 
             return newSize - initSize == 1;
         }
+        public List<SaleItem> GetSales()
+        {
+            return sales_;
+        }
     }
 }
