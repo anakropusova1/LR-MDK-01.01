@@ -14,5 +14,14 @@ namespace лаб3
         {
             data_ = new List<ReportRow>();
         }
+        public void AddRow(ReportRow row)
+        {
+            data_.Add(row);
+        }
+
+        public List<ReportRow> GetReportRows()
+        {
+            return data_;
+        }
     }
 }
