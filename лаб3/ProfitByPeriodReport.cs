@@ -8,6 +8,11 @@ namespace лаб3
 {
     public class ProfitByPeriodReport
     {
-       
+        private List<ReportRow> data_;
+
+        public ProfitByPeriodReport()
+        {
+            data_ = new List<ReportRow>();
+        }
     }
 }
