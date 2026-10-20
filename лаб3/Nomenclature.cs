@@ -14,6 +14,23 @@ namespace лаб3
         {
             products_ = new Dictionary<ProductGroup, List<string>>();
         }
+        public List<string> GetAllProductsGroup(ProductGroup productGroup)
+        {
+            if (products_.ContainsKey(productGroup))
+            {
+                return products_[productGroup];
+            }
+            return new List<string>();
+        }
 
+        public void AddProduct(ProductGroup productGroup, string productName)
+        {
+            if (!products_.ContainsKey(productGroup))
+            {
+                products_[productGroup] = new List<string>();
+            }
+
+            products_[productGroup].Add(productName);
+        }
     }
 }
