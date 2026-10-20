@@ -14,5 +14,13 @@ namespace лаб3
         {
             sales_ = new List<SaleItem>();
         }
+        public bool AddSale(SaleItem item)
+        {
+            int initSize = sales_.Count;
+            sales_.Add(item);
+            int newSize = sales_.Count;
+
+            return newSize - initSize == 1;
+        }
     }
 }
