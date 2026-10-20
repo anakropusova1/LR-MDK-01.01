@@ -8,6 +8,8 @@ namespace лаб3
 {
     public class ReportRow
     {
-        
+        public string product_;
+        public int count_;
+        public double cost_;
     }
 }
