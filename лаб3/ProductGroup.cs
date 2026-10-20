@@ -8,5 +8,7 @@ namespace лаб3
 {
     public enum ProductGroup
     {
+        Gruz,
+        NotGruz
     }
 }
