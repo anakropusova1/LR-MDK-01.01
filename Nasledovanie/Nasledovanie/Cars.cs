@@ -8,6 +8,17 @@ namespace Nasledovanie
 {
     public class Cars : Product
     {
-        
+        public override double CalculateDiscount()
+        {
+            if (count_ >= 5 && count_ <= 10)
+            {
+                return 15;
+            }
+
+            else if (count_ > 10)
+            {
+                return 25;
+            }
+        }
     }
 }
