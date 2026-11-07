@@ -36,5 +36,10 @@ namespace Nasledovanie
         {
             return count_;
         }
+
+        public virtual double CalculateDiscount()
+        {
+            return 0;
+        }
     }
 }

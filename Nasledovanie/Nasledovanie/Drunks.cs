@@ -8,6 +8,20 @@ namespace Nasledovanie
 {
     public class Drunks : Product
     {
-
+        public override double CalculateDiscount()
+        {
+            if (count_ >= 20 && count_ <= 150)
+            {
+                return 10;
+            }
+            else if (count_ > 150 && count_ <= 300)
+            {
+                return 30;
+            }
+            else if (count_ > 300)
+            {
+                return 50;
+            }
+        }
     }
 }

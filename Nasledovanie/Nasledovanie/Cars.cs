@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace Nasledovanie
 {
-   public class Cars : Product
+    public class Cars : Product
     {
+        
     }
 }
