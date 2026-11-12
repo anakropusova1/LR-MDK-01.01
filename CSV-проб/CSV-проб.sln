@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37216.2 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSV-проб", "CSV-проб\CSV-проб.csproj", "{4079B925-5819-4CC0-8397-72A6149D0E49}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4079B925-5819-4CC0-8397-72A6149D0E49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4079B925-5819-4CC0-8397-72A6149D0E49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4079B925-5819-4CC0-8397-72A6149D0E49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4079B925-5819-4CC0-8397-72A6149D0E49}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {704AB727-8820-4B04-8CAF-E30365A772ED}
+	EndGlobalSection
+EndGlobal
