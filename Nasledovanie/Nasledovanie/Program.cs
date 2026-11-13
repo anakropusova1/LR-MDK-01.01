@@ -9,8 +9,6 @@ namespace Nasledovanie
         static void Main(string[] args)
         {
             
-
-
             foreach (Product item in products)
             {
                 Console.WriteLine($"Товар:{item.GetName()},Кол-во:{item.GetCount()},Скидка{item.CalculateDiscount()}%");
