@@ -8,7 +8,10 @@ namespace Nasledovanie
     {
         static void Main(string[] args)
         {
-            
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
+
+            List<Product> products = Csv.LoadProductsFromFile(@"C:\Scv-файл\Тест2.csv");
+
             foreach (Product item in products)
             {
                 Console.WriteLine($"Товар:{item.GetName()},Кол-во:{item.GetCount()},Скидка{item.CalculateDiscount()}%");
