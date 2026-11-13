@@ -19,6 +19,8 @@ namespace Nasledovanie
             {
                 return 25;
             }
+
+            return base.CalculateDiscount();
         }
     }
 }

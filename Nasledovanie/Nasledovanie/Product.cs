@@ -41,5 +41,12 @@ namespace Nasledovanie
         {
             return 0;
         }
+
+        public double GetTotalPrice()
+        {
+            double total = price_ * count_;
+            double discount = CalculateDiscount();
+            return total - (total * discount / 100);
+        }
     }
 }
