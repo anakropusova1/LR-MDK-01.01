@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Nasledovanie
 {
-    public class Drunks : Product
+    public class Drinks : Product
     {
         public override double CalculateDiscount()
         {
